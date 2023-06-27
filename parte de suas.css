@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(72deg, #a123d3 35%, #a123d3, #a123d3 99%); ;
+}
+#area
+  {
+    position:relative;
+    left:5%;
+    top:15%;
+    width:320px;
+    height:270px;
+  }
+  #area #formulario
+  {
+    position:absolute;
+    display:block;   
+  }
+  fieldset
+  {
+    width:100px;
+    height:150px;
+  }
+  legend
+  {
+    font-style:bold;
+    font-family: “Segoe UI”,”Arial”,”Times New Roman”;
+  }
+.avaliacao{
+    display: flex;
+   }
+  .star-icon{
+    list-style-type: none;
+    border: 1px solid #a81da8;
+    cursor: pointer;
+    color: #ffe500;
+    font-size: 30px;/* alterar o tamanho das estrelas */
+  }
+  .star-icon::before{
+    content: "\2605";
+  }
+  .star-icon.ativo ~ .star-icon::before{
+    content: "\2606";
+  }
+  .avaliacao:hover .star-icon::before{
+    content: "\2605";
+  }
+  .star-icon:hover ~ .star-icon::before{
+    content: "\2606";
+  }
